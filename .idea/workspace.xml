@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="23cd744e-8950-4779-916e-38fa341fa74d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/szymou/homeassistant/util/Task.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/catalina.base_IS_UNDEFINED/logs/hass-2020-04-03-0.log" beforeDir="false" afterPath="$PROJECT_DIR$/catalina.base_IS_UNDEFINED/logs/hass-2020-04-03-0.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/szymou/homeassistant/HomeAssistantApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/szymou/homeassistant/HomeAssistantApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/szymou/homeassistant/HomeAssistantApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/szymou/homeassistant/HomeAssistantApplication.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -58,9 +62,9 @@
         <option value="Jsp File" />
         <option value="mapper" />
         <option value="Interface" />
-        <option value="Class" />
         <option value="spring-beans.schema" />
         <option value="XML File.xml" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -102,6 +106,7 @@
       <recent name="com.szymou.homeassistant" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\IDEA_MyProjects\HomeAssistant_v1\src\main\webapp" />
       <recent name="D:\IDEA_MyProjects\HomeAssistant_v1\src\main\resources" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -121,7 +126,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.Test.testPage">
+  <component name="RunManager" selected="Spring Boot.HomeAssistantApplication">
     <configuration name="HomeAssistantApplicationTests.contextLoads" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="HomeAssistant_v1" />
       <extension name="coverage">
@@ -229,8 +234,23 @@
       <updated>1585804728884</updated>
       <workItem from="1585804732354" duration="4018000" />
       <workItem from="1585810396303" duration="873000" />
-      <workItem from="1585811382223" duration="14293000" />
+      <workItem from="1585811382223" duration="15102000" />
     </task>
+    <task id="LOCAL-00001" summary="更新依赖">
+      <created>1585851020462</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1585851020462</updated>
+    </task>
+    <task id="LOCAL-00002" summary="加入bootstrap">
+      <created>1585851207599</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1585851207599</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -247,12 +267,17 @@
       </map>
     </option>
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="更新依赖" />
+    <MESSAGE value="加入bootstrap" />
+    <option name="LAST_COMMIT_MESSAGE" value="加入bootstrap" />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/szymou/homeassistant/HomeAssistantApplication.java</url>
-          <line>14</line>
+          <line>16</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
