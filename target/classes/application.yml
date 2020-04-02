@@ -1,0 +1,29 @@
+spring:
+  profiles:
+    active: product
+  mvc:
+    view:
+      prefix: /
+      suffix: .jsp
+
+  datasource:
+    url: jdbc:mysql://192.168.1.113:3306/hass
+    username: hassuser
+    password: 123456
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+mybatis-plus:
+  mapper-locations: classpath:/mapper/*.xml
+  global-config:
+    db-config:
+      id-type: auto
+      field-strategy: NOT_EMPTY
+      db-type: MYSQL
+  configuration:
+    map-underscore-to-camel-case: true
+    call-setters-on-nulls: true
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+  type-aliases-package: com.szymou.homeassistant.entity
+#logging:
+#  level:
+#    com.szymou.homeassistant.dao: debug

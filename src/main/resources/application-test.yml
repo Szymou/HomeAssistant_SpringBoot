@@ -1,0 +1,8 @@
+server:
+  port: 5090
+  servlet:
+    context-path: /HomeAssistant
+
+#自定义配置（可以使用@Value注解）
+pay_url: http://www.baidu.com
+pay_notifyUrl: http://www.xxx.com

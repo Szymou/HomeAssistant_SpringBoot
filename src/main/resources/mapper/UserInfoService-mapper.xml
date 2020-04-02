@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.szymou.homeassistant.dao.UserInfoDao">
+
+    <select id="findAll" resultType="com.szymou.homeassistant.entity.UserInfo">
+    select * from user_info limit 5
+</select>
+    <select id="findAllByPage" resultType="com.szymou.homeassistant.entity.UserInfo">
+    select * from user_info
+</select>
+</mapper>
