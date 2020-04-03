@@ -3,6 +3,7 @@ package com.szymou.homeassistant.test;
 import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.szymou.homeassistant.dao.UserInfoDao;
+import com.szymou.homeassistant.dao.UserMapper;
 import com.szymou.homeassistant.entity.UserInfo;
 import com.szymou.homeassistant.mqtt.MqttGatewayConf;
 import org.junit.runner.RunWith;

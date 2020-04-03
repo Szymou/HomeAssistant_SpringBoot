@@ -5,14 +5,15 @@ import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.szymou.homeassistant.entity.UserInfo;
 import org.apache.ibatis.annotations.Select;
+import org.springframework.stereotype.Component;
 
 import java.util.List;
-
+@Component
 public interface UserInfoDao extends BaseMapper<UserInfo> {
     @Select("select * from user_info")
-    List<UserInfo> fingUserInfo();
+    List<UserInfo> fingUserInfo(); //注解sql
 
-    List<UserInfo> findAll();
+    List<UserInfo> findAll();  //映射mapper.xml
 
-    IPage<UserInfo> findAllByPage(Page page);
+    IPage<UserInfo> findAllByPage(Page page); //分页
 }
