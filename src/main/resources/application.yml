@@ -5,6 +5,8 @@ spring:
     view:
       prefix: /
       suffix: .jsp
+#  main:
+#    allow-bean-definition-overriding: true
 
   datasource:
     url: jdbc:mysql://192.168.1.113:3306/hass
@@ -27,3 +29,14 @@ mybatis-plus:
 #logging:
 #  level:
 #    com.szymou.homeassistant.dao: debug
+
+#mqtt配置
+mqtt:
+  host: tcp://192.168.1.113:1883
+  username: hass
+  password: 123
+  qoslevel: 1
+  timeout: 10000
+  keepalive: 20
+  clientid: mqttId
+  defaultTopic: 8266light/switch/8266light_logo_light/command

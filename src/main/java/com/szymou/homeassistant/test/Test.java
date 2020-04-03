@@ -4,8 +4,7 @@ import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.szymou.homeassistant.dao.UserInfoDao;
 import com.szymou.homeassistant.entity.UserInfo;
-import org.apache.ibatis.annotations.Select;
-import org.junit.Assert;
+import com.szymou.homeassistant.mqtt.MqttGatewayConf;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -19,6 +18,10 @@ public class Test {
 
     @Autowired
     private UserInfoDao userMapper;
+
+    @Autowired
+    MqttGatewayConf mqttGateway;
+
     @org.junit.Test
     public void testSelect() {
         System.out.println(("----- selectAll method test ------"));
@@ -45,4 +48,10 @@ public class Test {
         System.out.println(infoIPage);
     }
 
+
+    @org.junit.Test
+    public void sendMqtt(){
+        mqttGateway.sendToMqtt("OFF","8266light/switch/8266light_logo_light/command");
+//        return "OK";
+    }
 }
